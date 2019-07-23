@@ -245,12 +245,11 @@ extension GHTableView: UITableViewDataSource {
                 cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: false)
                 return cell
             }
+            cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: false)
 
             if (actionToTake == -1) {
-                cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: false)
                 GHTableViewDataSource!.tableView(tableView: tableView, collapseCell: cell, withIndexPath: indexPath)
             } else {
-                cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: true)
                 GHTableViewDataSource!.tableView(tableView: tableView, expandCell: cell, withIndexPath: indexPath)
             }
             actionToTake = 0
@@ -269,12 +268,11 @@ extension GHTableView: UITableViewDataSource {
                 }
                 return cell
             }
-            
+            cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: false)
+
             if (actionToTake == -1) {
-                cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: false)
                 GHTableViewDataSource!.tableView(tableView: tableView, collapseCell: cell, withIndexPath: indexPath)
             } else {
-                cell = GHTableViewDataSource!.tableView(tableView: tableView, cellForRowAtIndexPath: indexPath, isExpanded: true)
                 GHTableViewDataSource!.tableView(tableView: tableView, expandCell: cell, withIndexPath: indexPath)
             }
             actionToTake = 0

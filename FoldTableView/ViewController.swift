@@ -40,7 +40,7 @@ class ViewController: UIViewController,GHTableViewDataSource,GHTableViewDelegate
             }
             
         } else {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "CollapseCell") as? CollapseCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "CellMine") as? FoldTableViewCell {
                 
                 return cell;
             }
